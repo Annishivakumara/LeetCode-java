@@ -1,11 +1,13 @@
-class Solution {
-
-    void printGfg(int N) {
-        if(N==0){
-            return;
-        }// code here
-        System.out.print("GFG ");
-      
-        printGfg(N-1);
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+      if(N==0){
+          return ;
+      }  
+      printNos(N-1);
+      System.out.print(N+" ");
+     
     }
 }
